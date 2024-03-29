@@ -5,14 +5,16 @@ function generateDataSensor(): [number, number, number] {
     const temperature = parseFloat(
         randomInteger(MIN_TEMPERATURE, MAX_TEMPERATURE).toFixed(2)
     );
-    const humimdity  = parseFloat(
-        randomInteger(MIN_HUMIDITY, MAX_HUMIDITY).toFixed(2)
-    );
+
     const pressure = parseFloat( 
         randomInteger(MIN_PRESSURE, MAX_PRESSURE).toFixed(2)
     );
 
-    return [temperature, humimdity, pressure];
+    const humimdity  = parseFloat(
+        randomInteger(MIN_HUMIDITY, MAX_HUMIDITY).toFixed(2)
+    );
+
+    return [temperature, pressure, humimdity]; // [Температура, давление, влажность]
 };
 
 export default generateDataSensor;

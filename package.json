@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^20.11.30",
+    "fs": "^0.0.1-security",
     "i2c-bus": "^5.2.3",
     "typescript": "^5.4.3"
   },

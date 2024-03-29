@@ -5,18 +5,20 @@ class Sensor {
         this.data = data;
     }
 
+    // Температура
     getTemperature(): number | undefined {
         if (this.data[0]) return this.data[0];
         return undefined;
     }
 
-    getHumidity(): number | undefined {
-        if (this.data[1]) return this.data[1];
-        return undefined;
-    }
-
+    // Давление
     getPressure(): number | undefined {
         if (this.data[2]) return this.data[2];
+        return undefined;
+    }
+    // Влажности
+    getHumidity(): number | undefined {
+        if (this.data[1]) return this.data[1];
         return undefined;
     }
 };
