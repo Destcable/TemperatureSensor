@@ -1,1 +1,0 @@
-export const getFormattedDateTime = new Date().toLocaleString();

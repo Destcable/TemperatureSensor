@@ -1,13 +1,16 @@
 import Sensor from "./Sensor";
 import fetchTemperature from "./fetch/fetchTemperature";
 import generateDataSensor from "./utils/generateDataSensor";
-import { getFormattedDateTime } from "./utils/getFormattedDateTime";
+// import { getFormattedDateTime } from "./utils/getFormattedDateTime";
 
 function App() { 
     const dataSensor = generateDataSensor();
     const sensor = new Sensor(dataSensor);
     
     const temperature = sensor.getTemperature();
+    
+    const getFormattedDateTime = new Date().toLocaleString();
+
     if (temperature) {
         console.log(`[${getFormattedDateTime}] ${fetchTemperature(temperature)}: ${temperature} °C`);
     }
