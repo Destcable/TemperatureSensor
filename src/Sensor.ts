@@ -2,9 +2,7 @@ class Sensor {
     data: [number, number, number] | [] = [];
 
     constructor(data: [number, number, number]) {
-        this.data[0] = data[0];
-        this.data[1] = data[1];
-        this.data[2] = data[2];
+        this.data = data;
     }
 
     getTemperature(): number | undefined {
