@@ -1,0 +1,21 @@
+{
+  "name": "temperaturesensor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.11.30",
+    "i2c-bus": "^5.2.3",
+    "typescript": "^5.4.3"
+  },
+  "devDependencies": {
+    "@types/i2c-bus": "^5.1.2"
+  }
+}
